@@ -2,13 +2,14 @@ import logo from './marvel.png'
 import styled from 'styled-components'
 
 const Header = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #F0141E;
   diplay: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 97,5%;
-  margun: 0 auto;
   padding: 20px;
+  justify-content: space-between;
 `
 
 const Logo = styled.img`
