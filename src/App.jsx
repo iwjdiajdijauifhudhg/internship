@@ -6,7 +6,7 @@ const Header = styled.div`
   top: 0;
   left: 0;
   background-color: #F0141E;
-  diplay: flex;
+  display: flex;
   width: 97,5%;
   padding: 20px;
   justify-content: space-between;
@@ -23,6 +23,7 @@ const Menu = styled.div`
       color: yellow;
       text-decoration: none;
       font-weight: 400;
+      font-size: 25px;
       &:hover {
         text-decoration: underline;
     }
