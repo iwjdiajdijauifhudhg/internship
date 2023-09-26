@@ -1,7 +1,7 @@
-import logo from './marvel.png'
 import styled from 'styled-components'
+import logo from '../public/images/marvel.png'
 
-const Header = styled.div`
+const Container = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -18,6 +18,8 @@ const Logo = styled.img`
 
 const Menu = styled.div`
   span{
+    font-family: Montserrat;
+    font-weight: 500;
     margin-left: 1rem; 
     a{
       color: yellow;
@@ -31,19 +33,17 @@ const Menu = styled.div`
   }
 `
 
-function App() {
-  return (
-    <>
-      <Header>
+function Header() {
+    return(
+        <Container>
         <Logo src={logo}/>
         <Menu>
           <span><a href='https://www.youtube.com/watch?v=Sagg08DrO5U'>Characters</a></span>
           <span><a href='https://www.youtube.com/watch?v=Sagg08DrO5U'>Comics</a></span>
           <span><a href='https://www.youtube.com/watch?v=Sagg08DrO5U'>Series</a></span>
         </Menu>
-      </Header>
-    </>
-  )
+      </Container>
+    )
 }
 
-export default App
+export default Header
