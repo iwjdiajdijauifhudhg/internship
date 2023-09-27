@@ -2,9 +2,6 @@ import styled from 'styled-components'
 import logo from '../public/images/marvel.png'
 
 const Container = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: #F0141E;
   display: flex;
   width: 97,5%;
@@ -18,13 +15,11 @@ const Logo = styled.img`
 
 const Menu = styled.div`
   span{
-    font-family: Montserrat;
-    font-weight: 500;
     margin-left: 1rem; 
     a{
       color: yellow;
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 25px;
       &:hover {
         text-decoration: underline;

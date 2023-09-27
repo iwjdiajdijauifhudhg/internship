@@ -12,6 +12,11 @@ const Container = styled.div`
 
   span{
     margin-left: 1rem; 
+    p{
+      color: white;
+      font-weight: 400;
+      font-size: 15px;
+    }
     a{
       color: white;
       text-decoration: none;
@@ -23,18 +28,23 @@ const Container = styled.div`
     }
   }
 `
-
+const Box = styled.div`
+  align-items: center;
+`
 const Logo = styled.img`
-  width: 8%;
+  width: 10%;
+  display: block;
 `
 
 function Footer() {
-    const date = 2022
+    const now = new Date().getFullYear();
     return(
         <Container>
             <Logo src={logo}/>
-            <span><a href='https://disk.yandex.ru/d/WpxkbL7Qh4AJcA'>developer.marvel.com</a></span>
-            <p>{date}</p>
+            <Box>
+              <span><a href='https://disk.yandex.ru/d/WpxkbL7Qh4AJcA'>developer.marvel.com</a></span>
+              <span><p>Data provided py Marvel. {now} MARVEL</p></span>
+            </Box>
         </Container>
     )
 }
